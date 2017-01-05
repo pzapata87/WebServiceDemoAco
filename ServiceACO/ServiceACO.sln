@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceACO", "ServiceACO\ServiceACO.csproj", "{C94F3848-0104-453B-8ADA-36276C03FCFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACO.DataAccess", "ACO.DataAccess\ACO.DataAccess.csproj", "{ED9A29CE-4C2B-429F-ACD2-C675D5BED1F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACO.Business.Entity", "ACO.Business.Entity\ACO.Business.Entity.csproj", "{EBD93A40-04A9-4584-B2B0-4FCF60730DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACO.Business.Logic", "ACO.Business.Logic\ACO.Business.Logic.csproj", "{FBE71B9A-B50A-4575-A646-6C559B35C765}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,23 @@ Global
 		{C94F3848-0104-453B-8ADA-36276C03FCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C94F3848-0104-453B-8ADA-36276C03FCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C94F3848-0104-453B-8ADA-36276C03FCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9A29CE-4C2B-429F-ACD2-C675D5BED1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9A29CE-4C2B-429F-ACD2-C675D5BED1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9A29CE-4C2B-429F-ACD2-C675D5BED1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9A29CE-4C2B-429F-ACD2-C675D5BED1F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD93A40-04A9-4584-B2B0-4FCF60730DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD93A40-04A9-4584-B2B0-4FCF60730DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD93A40-04A9-4584-B2B0-4FCF60730DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD93A40-04A9-4584-B2B0-4FCF60730DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE71B9A-B50A-4575-A646-6C559B35C765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE71B9A-B50A-4575-A646-6C559B35C765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE71B9A-B50A-4575-A646-6C559B35C765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE71B9A-B50A-4575-A646-6C559B35C765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
