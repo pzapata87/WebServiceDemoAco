@@ -1,13 +1,19 @@
 ﻿using ACO.Business.Entity;
+using ACO.DataAccess;
 using Core.Singleton;
 
 namespace ACO.Business.Logic
 {
     public class ClienteBL : Singleton<ClienteBL>
     {
-        public int Add(Cliente respuesta)
+        public int Add(Cliente cliente)
         {
-            return EncuestaRepository.Instancia.Add(respuesta);
+            return ClienteRepository.GetInstance().Add(cliente);
+        }
+
+        public void Remove(int id)
+        {
+            ClienteRepository.GetInstance().Remove(id);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace ACO.DataAccess
         {
             int id;
 
-            using (var comando = _database.GetStoredProcCommand("Insert_PreguntaEncuestaSolicitud"))
+            using (var comando = _database.GetStoredProcCommand("Insert_Cliente"))
             {
                 _database.AddInParameter(comando, "@Dni", DbType.String, cliente.Dni);
                 _database.AddInParameter(comando, "@Nombre", DbType.String, cliente.Nombre);
@@ -32,6 +32,15 @@ namespace ACO.DataAccess
             }
 
             return id;
+        }
+
+        public void Remove(int id)
+        {
+            using (var comando = _database.GetStoredProcCommand("Delete_Cliente"))
+            {
+                _database.AddInParameter(comando, "@Id", DbType.Int32, id);
+                _database.ExecuteNonQuery(comando);
+            }
         }
 
         #endregion

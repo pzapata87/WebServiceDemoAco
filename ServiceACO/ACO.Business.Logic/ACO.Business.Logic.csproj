@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ACO.Business.Logic</RootNamespace>
     <AssemblyName>ACO.Business.Logic</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,6 +59,10 @@
     <ProjectReference Include="..\ACO.Business.Entity\ACO.Business.Entity.csproj">
       <Project>{ebd93a40-04a9-4584-b2b0-4fcf60730de9}</Project>
       <Name>ACO.Business.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACO.DataAccess\ACO.DataAccess.csproj">
+      <Project>{ed9a29ce-4c2b-429f-acd2-c675d5bed1f3}</Project>
+      <Name>ACO.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
