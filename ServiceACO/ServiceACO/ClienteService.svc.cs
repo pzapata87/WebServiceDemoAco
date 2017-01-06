@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ACO.Business.Entity;
 using ACO.Business.Logic;
 using ServiceACO.Core;
@@ -25,6 +26,15 @@ namespace ServiceACO
                 });
 
                 response.ejecucionExitosa = id > 0;
+                response.mensaje = "Cliente agregado correctamente";
+                response.respuestaWebService = new List<ParametroWebService>
+                {
+                    new ParametroWebService
+                    {
+                        nombre = "Id",
+                        valor = id.ToString()
+                    }
+                };
             }
             catch (Exception ex)
             {
@@ -43,6 +53,7 @@ namespace ServiceACO
                 ClienteBL.GetInstance().Remove(id);
 
                 response.ejecucionExitosa = true;
+                response.mensaje = "Cliente eliminado correctamente";
             }
             catch (Exception ex)
             {
